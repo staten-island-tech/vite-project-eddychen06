@@ -41,8 +41,11 @@ h1 {
 
 #app {
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  max-width: 75%;
 }
 
 .navbar {
@@ -79,4 +82,29 @@ h1 {
 
 .nav-link:hover {
   text-decoration: none;
+}
+
+.card {
+  width: 30%;
+  max-height: 40%;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  padding: 1rem;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+img {
+  object-fit: cover;
+  height: 10rem;
+}
+
+#sidebar {
+  width: 90%;
+  display: inline-flex;
+  justify-content: space-around;
 }
