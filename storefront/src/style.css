@@ -39,13 +39,32 @@ h1 {
   line-height: 1.1;
 }
 
-#app {
-  margin: 0 auto;
-  text-align: center;
+h2 {
+  font-size: 2rem;
+}
+
+.product-list {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  max-width: 75%;
+  width: 85%;
+}
+
+
+.sidebar {
+  width: 15%;
+  display: flex;
+  flex-flow: column warp;
+  justify-content: space-around;
+  background: gray;
+  padding: 0;
+}
+
+#app {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 90%;
 }
 
 .navbar {
@@ -55,6 +74,8 @@ h1 {
   height: 5%;
   align-items: center;
 }
+
+
 
 .nav-logo {
   height: 3em;
@@ -85,7 +106,7 @@ h1 {
 }
 
 .card {
-  width: 30%;
+  width: 20%;
   max-height: 40%;
   margin: auto;
   text-align: center;
@@ -99,12 +120,10 @@ h1 {
 }
 
 img {
-  object-fit: cover;
   height: 10rem;
 }
 
-#sidebar {
-  width: 90%;
-  display: inline-flex;
-  justify-content: space-around;
+
+h3 {
+  padding: .25rem;
 }
