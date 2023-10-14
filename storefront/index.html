@@ -1,29 +1,37 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>cool cars dealership</title>
-  </head>
-  <body>
-    <div class="navbar">
-      <h1>cool cars dealership</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>cool cars dealership</title>
+</head>
+
+<body>
+  <div class="navbar">
+    <h1>cool cars dealership</h1>
+    <div class="button">
+      <button id="toggle-btn">Toggle Dark Mode</button>
     </div>
-    <div id="app">
-      <div class="sidebar">
-        <div class="category" id="brand">
-          <h3>Brand</h3>
-        </div>
-        <div class="category" id="type">
-          <h3>Type</h3>
-        </div>
-        <div class="category"></div>
-        <div class="category"></div>
-        <div class="category"></div>
+  </div>
+  <div class="content">
+    <div id="sidebar">
+      <h2>Filter Cars</h2>
+      <div class="selected-filters"></div>
+      <div id="brand">
+        <h3>Brand:</h3>
       </div>
-      <div class="product-list"></div>
+      <div id="body-type">
+        <h3>Body Type:</h3>
+      </div>
     </div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+    <div id="product-list">
+    </div>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+  <script type="module" src="/src/filter.ts"></script>
+</body>
+
 </html>
+
